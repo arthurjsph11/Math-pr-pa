@@ -17,6 +17,7 @@ const ENCADRES: Record<string, string> = {
   erreur: 'Erreur fréquente',
   application: 'À quoi ça sert ?',
   memo: 'Mémo',
+  essai: "À toi d'essayer",
   verifier: 'À VÉRIFIER',
   source: 'Sources'
 }
