@@ -10,6 +10,9 @@ import Balance from './Balance.vue'
 import Video from './Video.vue'
 import BoutonImprimer from './BoutonImprimer.vue'
 import BoutonAccueil from './BoutonAccueil.vue'
+import Exercice from './Exercice.vue'
+import ReponseMath from './ReponseMath.vue'
+import CarnetErreurs from './CarnetErreurs.vue'
 
 export default {
   extends: DefaultTheme,
@@ -26,5 +29,8 @@ export default {
     app.component('Balance', Balance)
     app.component('Video', Video)
     app.component('BoutonImprimer', BoutonImprimer)
+    app.component('Exercice', Exercice)
+    app.component('ReponseMath', ReponseMath)
+    app.component('CarnetErreurs', CarnetErreurs)
   }
 } satisfies Theme

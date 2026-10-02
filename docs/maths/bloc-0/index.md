@@ -12,4 +12,10 @@ et la résolution d'équations.
 | Avancé | À venir |
 | Niveau bac | À venir |
 
+## Thème : Fractions
+
+| Niveau | Leçons |
+|---|---|
+| Bases | [Exercices sur les fractions](./fractions/exercices-fractions) <span class="badge-bts">BTS</span> (la leçon de cours viendra ensuite) |
+
 Les autres thèmes du Bloc 0 (calcul, manipulation de formules) arrivent à l'étape 8.

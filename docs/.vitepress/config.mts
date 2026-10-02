@@ -53,7 +53,8 @@ export default defineConfig({
     nav: [
       { text: 'Accueil', link: '/' },
       { text: 'Maths', link: '/maths/', activeMatch: '/maths/' },
-      { text: 'Physique-chimie', link: '/physique/', activeMatch: '/physique/' }
+      { text: 'Physique-chimie', link: '/physique/', activeMatch: '/physique/' },
+      { text: "📒 Carnet d'erreurs", link: '/maths/carnet-erreurs' }
     ],
 
     // Un sommaire latéral différent pour chaque espace
@@ -61,7 +62,10 @@ export default defineConfig({
       '/maths/': [
         {
           text: 'Maths',
-          items: [{ text: 'Présentation', link: '/maths/' }]
+          items: [
+            { text: 'Présentation', link: '/maths/' },
+            { text: "📒 Mon carnet d'erreurs", link: '/maths/carnet-erreurs' }
+          ]
         },
         {
           text: 'Bloc 0 : bases de Seconde',
@@ -72,6 +76,12 @@ export default defineConfig({
               text: 'Équations · Bases',
               items: [
                 { text: 'Résoudre une équation du 1er degré', link: '/maths/bloc-0/equations/equation-premier-degre' }
+              ]
+            },
+            {
+              text: 'Fractions · Bases',
+              items: [
+                { text: 'Exercices sur les fractions', link: '/maths/bloc-0/fractions/exercices-fractions' }
               ]
             }
           ]
