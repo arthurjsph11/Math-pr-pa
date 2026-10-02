@@ -10,7 +10,7 @@
 | Étape | Statut |
 |---|---|
 | 1. Préparer (comptes GitHub/Supabase, dépôt) | Fait : Git installé, comptes GitHub + Supabase créés et liés, dépôt `arthurjsph11/Math-pr-pa` |
-| 2. Squelette | Validé sur PC. Téléphone et tablette à tester une fois en ligne (pas de tablette pour l'instant) |
+| 2. Squelette | En ligne (GitHub Pages actif, source « GitHub Actions »). Validé sur PC. Téléphone à tester ; tablette plus tard |
 | 3 à 10 | Pas commencées |
 
 ## Décisions techniques (et pourquoi)
