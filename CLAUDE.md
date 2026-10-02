@@ -11,7 +11,7 @@
 |---|---|
 | 1. Préparer (comptes GitHub/Supabase, dépôt) | Fait : Git installé, comptes GitHub + Supabase créés et liés, dépôt `arthurjsph11/Math-pr-pa` |
 | 2. Squelette | Validé par Arthur (PC). En ligne. Téléphone et tablette à tester plus tard |
-| 3. Leçon modèle | Construite et en ligne, en attente de la validation d'Arthur |
+| 3. Leçon modèle | Validée par Arthur le 2026-10-02 (avec 7 retours, voir ci-dessous). Bloc 0 : 13 leçons en brouillon |
 | 4. Exercices | Construits sur les fractions (page `docs/maths/bloc-0/fractions/exercices-fractions.md`), en attente des tests d'Arthur |
 | 5 à 10 | Pas commencées |
 
@@ -36,6 +36,14 @@ Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
 - Calculs alignés : commentaires courts, par ex. `&& (-2x)`, pour tenir sur téléphone.
 - Composants interactifs : `docs/.vitepress/theme/*.vue`, enregistrés dans `theme/index.ts`.
 - Ajouter la leçon dans `sidebar` (config.mts), dans la page du bloc, et dans `progression.ts`.
+- **Retours d'Arthur (2026-10-02), valables pour toutes les leçons :**
+  1. garder un tableau « image ↔ maths » (ex. balance ↔ fraction) ;
+  2. vidéos en miniature cliquable (`<Video id titre chaine />`), placées au fil du cours, pas à la fin ;
+  3. exemples corrigés en `::: essai` (énoncé d'abord) + `::: details Voir le corrigé` ;
+  4. garder une partie exercices ; encadré de réponse pour chaque exercice (composants de l'étape 4) ;
+  5. équations : toujours finir par « $x = $ résultat » ;
+  6. résumés imprimables avec une mise en page soignée type LibreOffice.
+- Vidéo non vérifiée (titre, chaîne) : la laisser avec un `::: verifier` pour Arthur.
 - KaTeX : garder la même version que celle de `@vscode/markdown-it-katex` (0.16.x), sinon symboles cassés.
 
 ## Exercices (étape 4) : comment en ajouter

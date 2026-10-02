@@ -73,15 +73,71 @@ export default defineConfig({
           items: [
             { text: 'Présentation du bloc', link: '/maths/bloc-0/' },
             {
-              text: 'Équations · Bases',
+              text: 'Calcul',
+              collapsed: true,
               items: [
-                { text: 'Résoudre une équation du 1er degré', link: '/maths/bloc-0/equations/equation-premier-degre' }
+                { text: '1. Priorités et nombres relatifs', link: '/maths/bloc-0/calcul/priorites-relatifs' }
               ]
             },
             {
-              text: 'Fractions · Bases',
+              text: 'Fractions',
+              collapsed: true,
               items: [
+                { text: '2. Calculer avec les fractions', link: '/maths/bloc-0/fractions/calculer-avec-les-fractions' },
                 { text: 'Exercices sur les fractions', link: '/maths/bloc-0/fractions/exercices-fractions' }
+              ]
+            },
+            {
+              text: 'Puissances et racines',
+              collapsed: true,
+              items: [
+                { text: '3. Puissances et écriture scientifique', link: '/maths/bloc-0/calcul/puissances' },
+                { text: '4. Racines carrées', link: '/maths/bloc-0/calcul/racines-carrees' }
+              ]
+            },
+            {
+              text: 'Calcul littéral',
+              collapsed: true,
+              items: [
+                { text: '5. Développer et factoriser', link: '/maths/bloc-0/calcul-litteral/developper-factoriser' },
+                { text: '6. Identités remarquables', link: '/maths/bloc-0/calcul-litteral/identites-remarquables' }
+              ]
+            },
+            {
+              text: 'Équations',
+              collapsed: true,
+              items: [
+                { text: '7. Équation du 1er degré', link: '/maths/bloc-0/equations/equation-premier-degre' },
+                { text: '8. Isoler une variable dans une formule', link: '/maths/bloc-0/formules/isoler-une-variable' },
+                { text: '9. Produit nul et fractions', link: '/maths/bloc-0/equations/produit-nul-quotient' }
+              ]
+            },
+            {
+              text: 'Inéquations',
+              collapsed: true,
+              items: [
+                { text: '10. Inéquations et intervalles', link: '/maths/bloc-0/inequations/inequations-intervalles' }
+              ]
+            },
+            {
+              text: 'Proportionnalité',
+              collapsed: true,
+              items: [
+                { text: '11. Proportionnalité et pourcentages', link: '/maths/bloc-0/proportionnalite/proportionnalite-pourcentages' }
+              ]
+            },
+            {
+              text: 'Systèmes',
+              collapsed: true,
+              items: [
+                { text: '12. Systèmes de deux équations', link: '/maths/bloc-0/systemes/systemes-deux-equations' }
+              ]
+            },
+            {
+              text: 'Fonctions',
+              collapsed: true,
+              items: [
+                { text: '13. Fonctions affines', link: '/maths/bloc-0/fonctions/fonctions-affines' }
               ]
             }
           ]
