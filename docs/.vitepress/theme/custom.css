@@ -1,0 +1,76 @@
+/* ---------- Couleurs des encadrés (mode clair) ---------- */
+:root {
+  --encadre-definition: #2563eb;
+  --encadre-propriete: #059669;
+  --encadre-demonstration: #64748b;
+  --encadre-methode: #7c3aed;
+  --encadre-erreur: #dc2626;
+  --encadre-application: #d97706;
+  --encadre-memo: #db2777;
+  --encadre-verifier: #b91c1c;
+  --surligne: #fde68a;
+}
+
+/* ---------- Mode sombre : couleurs plus claires pour rester lisibles ---------- */
+.dark {
+  --encadre-definition: #60a5fa;
+  --encadre-propriete: #34d399;
+  --encadre-demonstration: #94a3b8;
+  --encadre-methode: #a78bfa;
+  --encadre-erreur: #f87171;
+  --encadre-application: #fbbf24;
+  --encadre-memo: #f472b6;
+  --encadre-verifier: #fca5a5;
+  --surligne: #854d0e;
+}
+
+/* ---------- Encadrés ---------- */
+.encadre {
+  --c: var(--encadre-definition);
+  margin: 20px 0;
+  padding: 12px 18px;
+  border-left: 5px solid var(--c);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--c) 9%, transparent);
+}
+.encadre-titre {
+  margin: 0 0 6px !important;
+  font-weight: 700;
+  color: var(--c);
+}
+.encadre-propriete { --c: var(--encadre-propriete); }
+.encadre-demonstration { --c: var(--encadre-demonstration); border-left-style: dashed; }
+.encadre-methode { --c: var(--encadre-methode); }
+.encadre-erreur { --c: var(--encadre-erreur); }
+.encadre-application { --c: var(--encadre-application); }
+.encadre-memo { --c: var(--encadre-memo); }
+.encadre-verifier { --c: var(--encadre-verifier); border: 2px dashed var(--c); }
+
+/* ---------- Surlignage : écrire <mark>texte</mark> ---------- */
+mark {
+  background: var(--surligne);
+  color: inherit;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* ---------- Formules ---------- */
+.katex { font-size: 1.12em; }
+/* Une longue formule défile horizontalement au lieu de déborder sur téléphone */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+
+/* ---------- Confort tactile (tablette, téléphone) ---------- */
+@media (pointer: coarse) {
+  .VPSidebarItem .link,
+  .VPNavScreenMenuLink,
+  .VPNavScreenMenuGroupLink {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .VPSidebarItem .text { font-size: 15px; }
+}
