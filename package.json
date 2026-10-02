@@ -6,7 +6,8 @@
     "dev": "vitepress dev docs",
     "dev:reseau": "vitepress dev docs --host",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "verifier": "node scripts/verifier-exercices.mjs"
   },
   "devDependencies": {
     "@vscode/markdown-it-katex": "^1.1.2",

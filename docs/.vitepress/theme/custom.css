@@ -8,6 +8,7 @@
   --encadre-application: #d97706;
   --encadre-memo: #db2777;
   --encadre-verifier: #b91c1c;
+  --encadre-essai: #0891b2;
   --surligne: #fde68a;
 }
 
@@ -21,6 +22,7 @@
   --encadre-application: #fbbf24;
   --encadre-memo: #f472b6;
   --encadre-verifier: #fca5a5;
+  --encadre-essai: #22d3ee;
   --surligne: #854d0e;
 }
 
@@ -45,6 +47,7 @@
 .encadre-application { --c: var(--encadre-application); }
 .encadre-memo { --c: var(--encadre-memo); }
 .encadre-verifier { --c: var(--encadre-verifier); border: 2px dashed var(--c); }
+.encadre-essai { --c: var(--encadre-essai); border-left-width: 8px; }
 
 /* Sources : discrètes, sous chaque contenu */
 .encadre-source {

@@ -198,8 +198,11 @@ Place dans le programme : résolution des équations du premier degré,
 
 ### Exemple corrigé
 
-Résoudre $5x - 3 = 2x + 9$.
+::: essai
+Résous $5x - 3 = 2x + 9$.
+:::
 
+::: details Voir le corrigé
 $$
 \begin{aligned}
 5x - 3 &= 2x + 9 \\
@@ -211,9 +214,14 @@ x &= \frac{12}{3} = 4 && (\div 3)
 \end{aligned}
 $$
 
-**Vérification** : à gauche $5 \times 4 - 3 = 17$, à droite $2 \times 4 + 9 = 17$. ✓
+**Résultat : $x = 4$.** On écrit aussi $S = \{4\}$.
+:::
 
-**Conclusion** : l'équation a une seule solution, $x = 4$. On écrit aussi $S = \{4\}$.
+::: details Vérifier mon résultat
+À gauche $5 \times 4 - 3 = 17$, à droite $2 \times 4 + 9 = 17$. ✓
+:::
+
+<Video id="WoTpA2RyuVU" titre="LE COURS : Les équations - Troisième - Seconde" chaine="Yvan Monka" vedette />
 
 ### Fiche méthode
 
@@ -222,8 +230,8 @@ $$
 2. **Regrouper les $x$ d'un côté** : on soustrait (ou on ajoute) le même terme en $x$ aux deux membres.
 3. **Regrouper les nombres de l'autre côté**, avec la même règle.
 4. **Diviser** les deux membres par le nombre devant $x$.
-5. **Vérifier** en remplaçant $x$ par la valeur trouvée dans l'équation de départ.
-6. **Conclure** par une phrase : « La solution est … » ou $S = \{\ldots\}$.
+5. **Conclure** par un résultat bien visible : $x = \ldots$
+6. Si tu veux être sûr : **vérifier** en remplaçant $x$ par la valeur trouvée dans l'équation de départ.
 :::
 
 Tu entendras souvent « on fait **passer** le 3 de l'autre côté en changeant le signe ».
@@ -326,7 +334,7 @@ Valeurs de la LED : ordres de grandeur typiques d'une LED rouge, à remplacer pa
 
 ### Les vidéos
 
-<Video id="WoTpA2RyuVU" titre="LE COURS : Les équations - Troisième - Seconde" chaine="Yvan Monka" vedette />
+La vidéo du cours est placée plus haut, juste après l'exemple corrigé. Deux autres pour voir d'autres façons d'expliquer :
 
 <Video id="quzC5C3a9jM" titre="Résoudre une équation (1) - Troisième" chaine="Yvan Monka" />
 

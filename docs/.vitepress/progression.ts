@@ -16,9 +16,23 @@ export const matieres: Matiere[] = [
     nom: 'Maths',
     icone: '📐',
     lien: '/maths/',
-    chapitre: 'Bloc 0 · Résoudre une équation du premier degré',
-    lienChapitre: '/maths/bloc-0/equations/equation-premier-degre',
-    lecons: [{ cle: 'maths/bloc-0/equations/equation-premier-degre', parties: 3 }]
+    chapitre: 'Bloc 0 · Les bases du calcul',
+    lienChapitre: '/maths/bloc-0/',
+    lecons: [
+      { cle: 'maths/bloc-0/calcul/priorites-relatifs', parties: 3 },
+      { cle: 'maths/bloc-0/fractions/calculer-avec-les-fractions', parties: 3 },
+      { cle: 'maths/bloc-0/calcul/puissances', parties: 3 },
+      { cle: 'maths/bloc-0/calcul/racines-carrees', parties: 3 },
+      { cle: 'maths/bloc-0/calcul-litteral/developper-factoriser', parties: 3 },
+      { cle: 'maths/bloc-0/calcul-litteral/identites-remarquables', parties: 3 },
+      { cle: 'maths/bloc-0/equations/equation-premier-degre', parties: 3 },
+      { cle: 'maths/bloc-0/formules/isoler-une-variable', parties: 3 },
+      { cle: 'maths/bloc-0/equations/produit-nul-quotient', parties: 3 },
+      { cle: 'maths/bloc-0/inequations/inequations-intervalles', parties: 3 },
+      { cle: 'maths/bloc-0/proportionnalite/proportionnalite-pourcentages', parties: 3 },
+      { cle: 'maths/bloc-0/systemes/systemes-deux-equations', parties: 3 },
+      { cle: 'maths/bloc-0/fonctions/fonctions-affines', parties: 3 }
+    ]
   },
   {
     nom: 'Physique',
