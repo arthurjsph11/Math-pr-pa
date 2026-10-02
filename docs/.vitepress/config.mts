@@ -22,11 +22,12 @@ const ENCADRES: Record<string, string> = {
 
 export default defineConfig({
   lang: 'fr-FR',
-  title: 'Maths pour la prépa',
+  title: 'Mes révisions prépa',
   description: "Mon site pour comprendre les maths, du niveau Seconde jusqu'à la prépa ATS",
   base: BASE,
   cleanUrls: true,
-  lastUpdated: true,
+  // Date « Mis à jour le » : calculée seulement lors de la publication par GitHub (CI)
+  lastUpdated: !!process.env.CI,
 
   markdown: {
     config: (md) => {

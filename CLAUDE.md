@@ -34,7 +34,10 @@
 ## Points à vérifier / en attente
 
 - Site en ligne : https://arthurjsph11.github.io/Math-pr-pa/ (publié par `.github/workflows/deploy.yml`).
-- Arthur n'aime pas la page d'accueil actuelle : lui demander ce qu'il veut (elle deviendra la carte des notions).
+- Page d'accueil (voulue par Arthur) : titre « Mes révisions prépa / Arthur » + récap « Où j'en suis »
+  (Maths, Physique, Chimie : chapitre en cours + avancement). Données dans `docs/.vitepress/progression.ts`,
+  mises à jour à la main pour l'instant ; à brancher sur la vraie progression à l'étape 5.
+  La carte des notions (étape 9) viendra en plus, sous le récap.
 - La page `docs/maths/demo-formules.md` est une page de test du squelette : à supprimer à l'étape 3.
 
 ---
