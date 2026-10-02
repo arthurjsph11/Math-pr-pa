@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: Continuer en maths
-      link: /maths/bloc-0/
+      link: /maths/bloc-0/equations/equation-premier-degre
     - theme: alt
       text: Physique-chimie
       link: /physique/

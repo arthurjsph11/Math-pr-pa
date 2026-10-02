@@ -17,7 +17,8 @@ const ENCADRES: Record<string, string> = {
   erreur: 'Erreur fréquente',
   application: 'À quoi ça sert ?',
   memo: 'Mémo',
-  verifier: 'À VÉRIFIER'
+  verifier: 'À VÉRIFIER',
+  source: 'Sources'
 }
 
 export default defineConfig({
@@ -59,15 +60,20 @@ export default defineConfig({
       '/maths/': [
         {
           text: 'Maths',
-          items: [
-            { text: 'Présentation', link: '/maths/' },
-            { text: 'Page de test des formules', link: '/maths/demo-formules' }
-          ]
+          items: [{ text: 'Présentation', link: '/maths/' }]
         },
         {
           text: 'Bloc 0 : bases de Seconde',
           collapsed: false,
-          items: [{ text: 'Présentation du bloc', link: '/maths/bloc-0/' }]
+          items: [
+            { text: 'Présentation du bloc', link: '/maths/bloc-0/' },
+            {
+              text: 'Équations · Bases',
+              items: [
+                { text: 'Résoudre une équation du 1er degré', link: '/maths/bloc-0/equations/equation-premier-degre' }
+              ]
+            }
+          ]
         },
         {
           text: 'Programme de rattrapage',

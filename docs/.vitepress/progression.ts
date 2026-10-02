@@ -1,5 +1,6 @@
 // Où j'en suis : affiché sur la page d'accueil.
-// Pour l'instant mis à jour à la main ; deviendra automatique à l'étape 5 (Supabase).
+// L'avancement est calculé à partir des parties terminées (boutons « J'ai terminé la partie »),
+// enregistrées sur l'appareil. Synchronisé entre appareils à l'étape 5 (Supabase).
 
 export interface Matiere {
   nom: string
@@ -7,7 +8,7 @@ export interface Matiere {
   lien: string
   chapitre: string | null // chapitre en cours (null = pas commencé)
   lienChapitre?: string
-  avancement: number // avancement du chapitre en cours, en %
+  lecons?: { cle: string; parties: number }[] // leçons du chapitre en cours
 }
 
 export const matieres: Matiere[] = [
@@ -16,21 +17,19 @@ export const matieres: Matiere[] = [
     icone: '📐',
     lien: '/maths/',
     chapitre: 'Bloc 0 · Résoudre une équation du premier degré',
-    lienChapitre: '/maths/bloc-0/',
-    avancement: 0
+    lienChapitre: '/maths/bloc-0/equations/equation-premier-degre',
+    lecons: [{ cle: 'maths/bloc-0/equations/equation-premier-degre', parties: 3 }]
   },
   {
     nom: 'Physique',
     icone: '⚡',
     lien: '/physique/',
-    chapitre: null,
-    avancement: 0
+    chapitre: null
   },
   {
     nom: 'Chimie',
     icone: '🧪',
     lien: '/physique/',
-    chapitre: null,
-    avancement: 0
+    chapitre: null
   }
 ]

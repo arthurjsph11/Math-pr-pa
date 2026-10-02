@@ -3,5 +3,13 @@
 Les outils qu'on utilise partout ensuite : le calcul, la manipulation de formules
 et la résolution d'équations.
 
-Les leçons arrivent à l'étape suivante. La première sera
-**résoudre une équation du premier degré**.
+## Thème : Équations
+
+| Niveau | Leçons |
+|---|---|
+| Bases | [Résoudre une équation du premier degré](./equations/equation-premier-degre) <span class="badge-bts">BTS</span> |
+| Intermédiaire | À venir |
+| Avancé | À venir |
+| Niveau bac | À venir |
+
+Les autres thèmes du Bloc 0 (calcul, manipulation de formules) arrivent à l'étape 8.

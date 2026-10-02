@@ -1,6 +1,22 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import { withBase } from 'vitepress'
-import { matieres } from '../progression'
+import { matieres, type Matiere } from '../progression'
+import { lire, cleParties } from './stockage'
+
+// Avancement (%) du chapitre en cours de chaque matière, lu sur l'appareil
+const avancement = ref<Record<string, number>>({})
+
+function calculer(m: Matiere) {
+  if (!m.lecons?.length) return 0
+  const total = m.lecons.reduce((s, l) => s + l.parties, 0)
+  const faites = m.lecons.reduce((s, l) => s + lire<number[]>(cleParties(l.cle), []).length, 0)
+  return Math.round((faites / total) * 100)
+}
+
+onMounted(() => {
+  avancement.value = Object.fromEntries(matieres.map((m) => [m.nom, calculer(m)]))
+})
 </script>
 
 <template>
@@ -15,10 +31,10 @@ import { matieres } from '../progression'
         <template v-if="m.chapitre">
           <p class="recap-label">Chapitre en cours</p>
           <a class="recap-chapitre" :href="withBase(m.lienChapitre ?? m.lien)">{{ m.chapitre }}</a>
-          <div class="recap-barre" role="progressbar" :aria-valuenow="m.avancement" aria-valuemin="0" aria-valuemax="100">
-            <div class="recap-rempli" :style="{ width: m.avancement + '%' }"></div>
+          <div class="recap-barre" role="progressbar" :aria-valuenow="avancement[m.nom] ?? 0" aria-valuemin="0" aria-valuemax="100">
+            <div class="recap-rempli" :style="{ width: (avancement[m.nom] ?? 0) + '%' }"></div>
           </div>
-          <p class="recap-pourcent">{{ m.avancement }} % du chapitre</p>
+          <p class="recap-pourcent">{{ avancement[m.nom] ?? 0 }} % du chapitre</p>
         </template>
 
         <p v-else class="recap-vide">Pas encore commencé</p>

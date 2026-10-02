@@ -46,6 +46,28 @@
 .encadre-memo { --c: var(--encadre-memo); }
 .encadre-verifier { --c: var(--encadre-verifier); border: 2px dashed var(--c); }
 
+/* Sources : discrètes, sous chaque contenu */
+.encadre-source {
+  --c: var(--vp-c-text-3);
+  border-left-width: 2px;
+  background: transparent;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+.encadre-source p { margin: 4px 0; line-height: 1.6; }
+
+/* Repère BTS dans les listes de leçons */
+.badge-bts {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--encadre-application);
+  color: #fff;
+}
+
 /* ---------- Surlignage : écrire <mark>texte</mark> ---------- */
 mark {
   background: var(--surligne);
@@ -61,6 +83,30 @@ mark {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 4px 0;
+}
+
+/* ---------- Impression (résumés en PDF) : seulement le contenu, en clair ---------- */
+@media print {
+  :root, .dark {
+    --vp-c-bg: #fff;
+    --vp-c-bg-soft: #fff;
+    --vp-c-text-1: #000;
+    --vp-c-text-2: #333;
+    --encadre-definition: #2563eb;
+    --encadre-propriete: #059669;
+    --encadre-methode: #7c3aed;
+    --encadre-erreur: #dc2626;
+    --encadre-application: #d97706;
+    --encadre-memo: #db2777;
+  }
+  .VPNav, .VPLocalNav, .VPSidebar, .VPDocAside, .VPDocFooter, .VPFooter,
+  .pas-imprime, .entete, .fin-partie { display: none !important; }
+  .VPContent, .VPDoc, .VPDoc .container, .VPDoc .content { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  .resume { font-size: 12px; }
+  .resume h1 { font-size: 20px !important; margin-bottom: 8px !important; }
+  .resume .encadre { margin: 8px 0; padding: 6px 12px; break-inside: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A4; margin: 12mm; }
 }
 
 /* ---------- Confort tactile (tablette, téléphone) ---------- */

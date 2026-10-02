@@ -10,8 +10,32 @@
 | Étape | Statut |
 |---|---|
 | 1. Préparer (comptes GitHub/Supabase, dépôt) | Fait : Git installé, comptes GitHub + Supabase créés et liés, dépôt `arthurjsph11/Math-pr-pa` |
-| 2. Squelette | En ligne (GitHub Pages actif, source « GitHub Actions »). Validé sur PC. Téléphone à tester ; tablette plus tard |
-| 3 à 10 | Pas commencées |
+| 2. Squelette | Validé par Arthur (PC). En ligne. Téléphone et tablette à tester plus tard |
+| 3. Leçon modèle | Construite et en ligne, en attente de la validation d'Arthur |
+| 4 à 10 | Pas commencées |
+
+## Modèle de leçon (étape 3) : à copier pour chaque nouvelle leçon
+
+Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
+(+ son résumé imprimable `…-resume.md`).
+
+- **Frontmatter** `lecon:` → `statut` (`brouillon` | `relue-arthur` | `relue-prof`), `niveau`
+  (Bases | Intermédiaire | Avancé | Niveau bac), `duree`, `bts: true/false`,
+  `prerequis` (liste de `texte` + `lien` facultatif). L'en-tête s'affiche tout seul (`EnTeteLecon.vue`).
+- **3 parties d'environ 10 min**, chacune terminée par
+  `<FinPartie lecon="chemin/sans/extension" :numero="n" :total="3" />` (progression enregistrée).
+  1. Comprendre : image forte + mémo (`::: memo`), tableau image ↔ maths, schéma interactif, limites de l'image.
+  2. Le cours : `::: definition`, `::: propriete`, `::: demonstration`, exemple corrigé, `::: methode`, `::: erreur`.
+  3. S'en servir : `::: application` (BTS / domotique), `<Video … vedette />` + 2 autres, exercices
+     sur 3 niveaux (indice puis corrigé dans `::: details`), lien vers le résumé.
+- **`::: source`** sous chaque contenu repris. **`::: verifier`** pour tout ce qui n'est pas sûr à 100 %.
+- Vidéos : vérifier titre et chaîne (oEmbed YouTube) avant de les mettre ; dire à Arthur
+  que Claude ne peut pas les regarder.
+- Chaque solution d'exercice est vérifiée en la remplaçant dans l'équation.
+- Calculs alignés : commentaires courts, par ex. `&& (-2x)`, pour tenir sur téléphone.
+- Composants interactifs : `docs/.vitepress/theme/*.vue`, enregistrés dans `theme/index.ts`.
+- Ajouter la leçon dans `sidebar` (config.mts), dans la page du bloc, et dans `progression.ts`.
+- KaTeX : garder la même version que celle de `@vscode/markdown-it-katex` (0.16.x), sinon symboles cassés.
 
 ## Décisions techniques (et pourquoi)
 
