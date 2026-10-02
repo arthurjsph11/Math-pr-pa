@@ -12,7 +12,8 @@
 | 1. Préparer (comptes GitHub/Supabase, dépôt) | Fait : Git installé, comptes GitHub + Supabase créés et liés, dépôt `arthurjsph11/Math-pr-pa` |
 | 2. Squelette | Validé par Arthur (PC). En ligne. Téléphone et tablette à tester plus tard |
 | 3. Leçon modèle | Construite et en ligne, en attente de la validation d'Arthur |
-| 4 à 10 | Pas commencées |
+| 4. Exercices | Construits sur les fractions (page `docs/maths/bloc-0/fractions/exercices-fractions.md`), en attente des tests d'Arthur |
+| 5 à 10 | Pas commencées |
 
 ## Modèle de leçon (étape 3) : à copier pour chaque nouvelle leçon
 
@@ -37,6 +38,25 @@ Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
 - Ajouter la leçon dans `sidebar` (config.mts), dans la page du bloc, et dans `progression.ts`.
 - KaTeX : garder la même version que celle de `@vscode/markdown-it-katex` (0.16.x), sinon symboles cassés.
 
+## Exercices (étape 4) : comment en ajouter
+
+- Un exercice = un « modèle » qui tire de nouveaux nombres à chaque fois : `docs/.vitepress/theme/exercices/banque-<theme>.ts`
+  (voir `banque-fractions.ts`), listé dans `exercices/index.ts`, thème déclaré dans `THEMES` (`exercices/types.ts`).
+- Dans une page : `<Exercice id="fractions-simplifier" :numero="1" />`.
+- Réponse tapée : `attendu` (fraction exacte) + `forme` : `libre` (1/2 = 2/4 = 0,5), `irreductible`
+  (« Juste, mais simplifie encore »), `equation` (réponse « x = valeur », corrigé terminé par `\boxed{x = …}`,
+  vérification dans `verification`, affichée repliée « Vérifier mon résultat »).
+- QCM : `choix`, chaque mauvaise réponse = une erreur fréquente réelle + son `explication`.
+- Toujours 2 indices puis la solution. 3 niveaux (1 application, 2 entraînement, 3 approfondissement), au moins 5 par niveau,
+  au moins un problème concret (BTS, domotique, vie courante) au niveau 3.
+- Moteur de correction : `exercices/calcul.ts` (fractions exactes). Clavier maths : `ReponseMath.vue`.
+- Carnet d'erreurs (`/maths/carnet-erreurs`, `CarnetErreurs.vue`) et suivi des indices : `exercices/memoire.ts`,
+  dans le navigateur (localStorage) en attendant Supabase (étape 5).
+- **Avant chaque envoi : `npm run verifier`** (recalcule 3 000 tirages par exercice d'une autre façon,
+  remplace les solutions dans les équations, teste la correction automatique). Ajouter un calcul indépendant
+  pour chaque nouvel exercice dans `scripts/verifier-exercices.mjs`.
+- Il n'existe pas encore de leçon de cours sur les fractions dans le dépôt : seulement la page d'exercices.
+
 ## Décisions techniques (et pourquoi)
 
 - **VitePress** (générateur de site à partir de Markdown, basé sur Node.js) :
@@ -53,7 +73,7 @@ Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
 - Structure : `docs/maths/<bloc>/<lecon>.md` et `docs/physique/...`.
 - Commandes : `npm install` (une fois), `npm run dev` (site local),
   `npm run dev:reseau` (site visible par la tablette et le téléphone sur le même Wi-Fi),
-  `npm run build` (fabrique le site final).
+  `npm run build` (fabrique le site final), `npm run verifier` (vérifie tous les exercices).
 
 ## Points à vérifier / en attente
 
