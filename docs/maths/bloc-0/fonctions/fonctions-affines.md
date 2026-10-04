@@ -322,4 +322,10 @@ Résous $1{,}5x + 7 < 2x + 4$.
 $7 - 4 < 2x - 1{,}5x$, donc $3 < 0{,}5x$, donc $x > 6$. **Au-delà de 6 km**, le second taxi est moins cher.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/fonctions/fonctions-affines" />
+
 <FinPartie lecon="maths/bloc-0/fonctions/fonctions-affines" :numero="3" :total="3" />

@@ -65,6 +65,15 @@ Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
   pour chaque nouvel exercice dans `scripts/verifier-exercices.mjs`.
 - Il n'existe pas encore de leçon de cours sur les fractions dans le dépôt : seulement la page d'exercices.
 
+## Exercices officiels : comment en ajouter
+
+- Section `docs/maths/exos-officiels/` : `index.md` (explication), `bloc-0.md` (par thème), `epreuves.md` (sujets complets).
+- Données : `docs/.vitepress/exos-officiels.ts` : sujet déclaré une fois dans `SUJETS` (lien vers le PDF officiel,
+  jamais recopié), puis une ligne par question dans `EXOS` (chemin de la leçon, numéro de question, résumé court).
+- Affichage : `<ExosOfficiels lecon="maths/bloc-0/…" />`, placé en bas de la partie 3 de chaque leçon et dans la page du bloc.
+- Sources : Éduscol (sujets officiels), APMEP (corrigés, annales bac, brevet, BTS), ENSEA (concours ATS).
+- Bloc 0 : 3 sujets 0 de l'épreuve anticipée classés (automatismes). Restent : 4 sujets 0, session 2026, brevet.
+
 ## Décisions techniques (et pourquoi)
 
 - **VitePress** (générateur de site à partir de Markdown, basé sur Node.js) :

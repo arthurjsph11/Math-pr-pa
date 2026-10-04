@@ -377,4 +377,10 @@ En haut : $\dfrac{4}{6} - \dfrac{3}{6} = \dfrac{1}{6}$. Puis $\dfrac{1}{6} \div 
 **Résultat : $B = \dfrac{2}{3}$.**
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/fractions/calculer-avec-les-fractions" />
+
 <FinPartie lecon="maths/bloc-0/fractions/calculer-avec-les-fractions" :numero="3" :total="3" />

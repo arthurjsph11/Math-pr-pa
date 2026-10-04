@@ -299,4 +299,10 @@ $\big[(x + 1) + 3\big]\big[(x + 1) - 3\big] = (x + 4)(x - 2)$.
 Contrôle avec $x = 0$ : $1 - 9 = -8$ et $4 \times (-2) = -8$ ✓.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/calcul-litteral/identites-remarquables" />
+
 <FinPartie lecon="maths/bloc-0/calcul-litteral/identites-remarquables" :numero="3" :total="3" />

@@ -454,4 +454,10 @@ premier degré (c'est le cas $a = 0$ vu dans le cours).
 
 Une page à imprimer ou à garder en PDF : **[voir le résumé imprimable](./equation-premier-degre-resume)**.
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/equations/equation-premier-degre" />
+
 <FinPartie lecon="maths/bloc-0/equations/equation-premier-degre" :numero="3" :total="3" />

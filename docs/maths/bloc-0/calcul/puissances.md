@@ -320,4 +320,10 @@ $2^9 = 512$ et $2^{10} = 1\,024$. Il faut 10 divisions, soit $10 \times 20 = 200
 **3 h 20 min**.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/calcul/puissances" />
+
 <FinPartie lecon="maths/bloc-0/calcul/puissances" :numero="3" :total="3" />

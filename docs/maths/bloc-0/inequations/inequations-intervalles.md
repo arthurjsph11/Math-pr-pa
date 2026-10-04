@@ -304,4 +304,10 @@ $\dfrac{x}{-2} > 2$, puis $x < -4$ : $]-\infty \,;\, -4[$.
 Contrôle avec $x = -6$ : $3 + 1 = 4 > 3$ ✓.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/inequations/inequations-intervalles" />
+
 <FinPartie lecon="maths/bloc-0/inequations/inequations-intervalles" :numero="3" :total="3" />

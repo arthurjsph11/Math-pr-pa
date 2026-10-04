@@ -321,4 +321,10 @@ La première ×2 donne $2x + 4y = 6$. Le même calcul ne peut pas valoir 6 et 5 
 Sur un graphique, ce sont deux droites parallèles.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/systemes/systemes-deux-equations" />
+
 <FinPartie lecon="maths/bloc-0/systemes/systemes-deux-equations" :numero="3" :total="3" />

@@ -21,3 +21,5 @@ les précédentes.
 | 13 | [Notion de fonction et fonctions affines](./fonctions/fonctions-affines) | Intermédiaire | <span class="badge-bts">BTS</span> |
 
 Toutes les leçons sont au statut **brouillon** tant que tu ne les as pas relues, puis ton prof.
+
+Après chaque leçon : les [exercices officiels du Bloc 0](/maths/exos-officiels/bloc-0), tirés de vrais sujets d'examen.

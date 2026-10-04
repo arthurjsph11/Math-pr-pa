@@ -290,4 +290,10 @@ Multiplie en haut et en bas par $\sqrt{5}$.
 $\dfrac{10\sqrt{5}}{5} = 2\sqrt{5}$.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/calcul/racines-carrees" />
+
 <FinPartie lecon="maths/bloc-0/calcul/racines-carrees" :numero="3" :total="3" />
