@@ -9,3 +9,8 @@ On avance **dans l'ordre**, un bloc après l'autre.
 | Prépa ATS | Le niveau au-dessus | Plus tard |
 
 Chaque thème a 4 niveaux : **Bases**, **Intermédiaire**, **Avancé**, **Niveau bac**.
+
+## 🎓 Exercices officiels
+
+Après une leçon, fais les [questions d'examens officiels sur le même thème](/maths/exos-officiels/),
+sans passer toute l'épreuve. Les épreuves complètes (bac, Première, BTS, concours ATS) sont rangées à part.

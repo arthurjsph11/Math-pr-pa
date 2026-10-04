@@ -54,6 +54,7 @@ export default defineConfig({
       { text: 'Accueil', link: '/' },
       { text: 'Maths', link: '/maths/', activeMatch: '/maths/' },
       { text: 'Physique-chimie', link: '/physique/', activeMatch: '/physique/' },
+      { text: '🎓 Exos officiels', link: '/maths/exos-officiels/', activeMatch: '/maths/exos-officiels/' },
       { text: "📒 Carnet d'erreurs", link: '/maths/carnet-erreurs' }
     ],
 
@@ -65,6 +66,15 @@ export default defineConfig({
           items: [
             { text: 'Présentation', link: '/maths/' },
             { text: "📒 Mon carnet d'erreurs", link: '/maths/carnet-erreurs' }
+          ]
+        },
+        {
+          text: '🎓 Exercices officiels',
+          collapsed: true,
+          items: [
+            { text: 'Comment ça marche', link: '/maths/exos-officiels/' },
+            { text: 'Par thème : Bloc 0', link: '/maths/exos-officiels/bloc-0' },
+            { text: 'Épreuves complètes', link: '/maths/exos-officiels/epreuves' }
           ]
         },
         {

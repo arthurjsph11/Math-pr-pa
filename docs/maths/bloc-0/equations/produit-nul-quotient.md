@@ -330,4 +330,10 @@ Valeur interdite : $x = 3$. Numérateur : $(x + 3)(x - 3) = 0$ donne $x = -3$ ou
 On écarte 3, donc **$x = -3$**.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/equations/produit-nul-quotient" />
+
 <FinPartie lecon="maths/bloc-0/equations/produit-nul-quotient" :numero="3" :total="3" />

@@ -325,4 +325,10 @@ Développe chaque morceau, puis réduis.
 $(x^2 + 5x + 6) - (x^2 + 5x) = x^2 + 5x + 6 - x^2 - 5x = 6$ ✓, quel que soit $x$.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/calcul-litteral/developper-factoriser" />
+
 <FinPartie lecon="maths/bloc-0/calcul-litteral/developper-factoriser" :numero="3" :total="3" />

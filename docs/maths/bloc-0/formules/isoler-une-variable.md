@@ -303,4 +303,10 @@ Si deux nombres non nuls sont égaux, leurs inverses aussi : $R = \dfrac{R_1 R_2
 Contrôle avec 30 Ω et 60 Ω : $\dfrac{1\,800}{90} = 20$ Ω ✓ (comme dans la leçon sur les fractions).
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/formules/isoler-une-variable" />
+
 <FinPartie lecon="maths/bloc-0/formules/isoler-une-variable" :numero="3" :total="3" />

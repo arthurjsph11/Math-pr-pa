@@ -328,4 +328,10 @@ Sans parenthèses, on trouve $2 + 20 - 1 = 21$. Pour changer le résultat, il fa
 Les parenthèses changent complètement le résultat : c'est pour ça qu'on ne les oublie jamais.
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/calcul/priorites-relatifs" />
+
 <FinPartie lecon="maths/bloc-0/calcul/priorites-relatifs" :numero="3" :total="3" />

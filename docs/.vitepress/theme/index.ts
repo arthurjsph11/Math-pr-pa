@@ -15,6 +15,7 @@ import BoutonAccueil from './BoutonAccueil.vue'
 import Exercice from './Exercice.vue'
 import ReponseMath from './ReponseMath.vue'
 import CarnetErreurs from './CarnetErreurs.vue'
+import ExosOfficiels from './ExosOfficiels.vue'
 
 export default {
   extends: DefaultTheme,
@@ -36,5 +37,6 @@ export default {
     app.component('Exercice', Exercice)
     app.component('ReponseMath', ReponseMath)
     app.component('CarnetErreurs', CarnetErreurs)
+    app.component('ExosOfficiels', ExosOfficiels)
   }
 } satisfies Theme

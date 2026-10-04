@@ -290,4 +290,10 @@ Cherche $CM$ tel que $0{,}8 \times CM = 1$.
 $CM = \dfrac{1}{0{,}8} = 1{,}25$, soit une hausse de **25 %** (et pas 20 %).
 :::
 
+### Exercices officiels
+
+Des questions tombées dans de vrais sujets d'examen, sur ce thème. Ouvre le sujet et fais seulement la question indiquée.
+
+<ExosOfficiels lecon="maths/bloc-0/proportionnalite/proportionnalite-pourcentages" />
+
 <FinPartie lecon="maths/bloc-0/proportionnalite/proportionnalite-pourcentages" :numero="3" :total="3" />
