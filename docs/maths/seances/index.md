@@ -20,14 +20,15 @@ On passe au chapitre suivant seulement quand tu réussis **la majorité des exer
 
 | N° | Chapitre | Point de départ | État |
 |---|---|---|---|
-| 1 | Dérivées | [Mini-test de niveau](./derivees/test-niveau) puis [séance 1](./derivees/seance-1) | En cours |
-| 2 | Limites, logarithme et exponentielle | | À venir |
-| 3 | Intégrales | | À venir |
-| 4 | Équations différentielles (1er puis 2e ordre) | | À venir |
-| 5 | Nombres complexes | | À venir |
-| 6 | Géométrie dans l'espace | | À venir |
+| 1 | Dérivées | [Mini-test](./derivees/test-niveau) puis [séance 1](./derivees/seance-1) | Disponible |
+| 2 | Limites, logarithme et exponentielle | [Mini-test](./limites-ln-exp/test-niveau) puis [séance 1](./limites-ln-exp/seance-1) | Disponible |
+| 3 | Intégrales | [Mini-test](./integrales/test-niveau) puis [séance 1](./integrales/seance-1) | Disponible |
+| 4 | Équations différentielles (1er puis 2e ordre) | [Mini-test](./equations-differentielles/test-niveau) puis [séance 1](./equations-differentielles/seance-1) | Disponible |
+| 5 | Nombres complexes | [Mini-test](./complexes/test-niveau) puis [séance 1](./complexes/seance-1) | Disponible |
+| 6 | Géométrie dans l'espace | [Mini-test](./geometrie-espace/test-niveau) puis [séance 1](./geometrie-espace/seance-1) | Disponible |
 
-Les séances suivantes sont écrites **au fur et à mesure**, selon tes résultats aux exercices.
+Chaque chapitre commence par un **mini-test** (5 questions) qui t'indique par quelle séance démarrer.
+Les séances suivantes de chaque chapitre sont écrites **au fur et à mesure**, selon tes résultats.
 
 ## Si tu reviens après une pause
 

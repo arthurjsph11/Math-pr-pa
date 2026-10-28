@@ -141,8 +141,9 @@ générateur : $I = \dfrac{E}{2r}$ (adaptation d'impédance).
 :::
 
 ::: verifier À VÉRIFIER par Arthur
-Les corrigés ont été recalculés par une méthode numérique indépendante. Je n'ai pas ajouté de
-vidéo : je ne peux pas les regarder, dis-moi si tu en veux une.
+Les corrigés ont été recalculés par une méthode numérique indépendante. Le numéro exact du Bulletin
+officiel cité en source est à vérifier. Je n'ai pas ajouté de vidéo : je ne peux pas les regarder,
+dis-moi si tu en veux une.
 :::
 
 <FinPartie lecon="maths/seances/derivees/seance-1" :numero="1" :total="1" />

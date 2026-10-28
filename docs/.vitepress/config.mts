@@ -154,6 +154,46 @@ export default defineConfig({
                 { text: 'Mini-test de niveau', link: '/maths/seances/derivees/test-niveau' },
                 { text: 'Séance 1 : dériver un polynôme', link: '/maths/seances/derivees/seance-1' }
               ]
+            },
+            {
+              text: 'Limites, ln et exp',
+              collapsed: true,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/limites-ln-exp/test-niveau' },
+                { text: "Séance 1 : limites en l'infini", link: '/maths/seances/limites-ln-exp/seance-1' }
+              ]
+            },
+            {
+              text: 'Intégrales',
+              collapsed: true,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/integrales/test-niveau' },
+                { text: "Séance 1 : primitives et intégrale d'un polynôme", link: '/maths/seances/integrales/seance-1' }
+              ]
+            },
+            {
+              text: 'Équations différentielles',
+              collapsed: true,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/equations-differentielles/test-niveau' },
+                { text: "Séance 1 : l'équation y' = ay + b", link: '/maths/seances/equations-differentielles/seance-1' }
+              ]
+            },
+            {
+              text: 'Nombres complexes',
+              collapsed: true,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/complexes/test-niveau' },
+                { text: 'Séance 1 : calculer avec i', link: '/maths/seances/complexes/seance-1' }
+              ]
+            },
+            {
+              text: "Géométrie dans l'espace",
+              collapsed: true,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/geometrie-espace/test-niveau' },
+                { text: 'Séance 1 : coordonnées, vecteurs et distance', link: '/maths/seances/geometrie-espace/seance-1' }
+              ]
             }
           ]
         },
