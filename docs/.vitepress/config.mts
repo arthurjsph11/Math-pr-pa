@@ -143,6 +143,21 @@ export default defineConfig({
           ]
         },
         {
+          text: 'Séances de 25 min',
+          collapsed: false,
+          items: [
+            { text: 'Présentation', link: '/maths/seances/' },
+            {
+              text: 'Dérivées',
+              collapsed: false,
+              items: [
+                { text: 'Mini-test de niveau', link: '/maths/seances/derivees/test-niveau' },
+                { text: 'Séance 1 : dériver un polynôme', link: '/maths/seances/derivees/seance-1' }
+              ]
+            }
+          ]
+        },
+        {
           text: 'Programme de rattrapage',
           collapsed: true,
           items: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({ text: `Bloc ${n} (à venir)` }))
