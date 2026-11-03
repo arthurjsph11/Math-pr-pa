@@ -158,9 +158,21 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Programme de rattrapage',
-          collapsed: true,
-          items: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({ text: `Bloc ${n} (à venir)` }))
+          text: 'Spécialité : Première et Terminale',
+          collapsed: false,
+          items: [
+            { text: 'Présentation et ordre des chapitres', link: '/maths/premiere/' },
+            {
+              text: '1. Le second degré',
+              collapsed: true,
+              items: [
+                { text: 'Leçon', link: '/maths/premiere/second-degre/second-degre' },
+                { text: 'Exercices', link: '/maths/premiere/second-degre/exercices-second-degre' },
+                { text: 'Résumé imprimable', link: '/maths/premiere/second-degre/second-degre-resume' }
+              ]
+            },
+            { text: '2 à 6. Dérivées, primitives, équations différentielles (à venir)' }
+          ]
         }
       ],
       '/physique/': [

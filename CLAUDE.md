@@ -64,6 +64,17 @@ Leçon de référence : `docs/maths/bloc-0/equations/equation-premier-degre.md`
   remplace les solutions dans les équations, teste la correction automatique). Ajouter un calcul indépendant
   pour chaque nouvel exercice dans `scripts/verifier-exercices.mjs`.
 - Il n'existe pas encore de leçon de cours sur les fractions dans le dépôt : seulement la page d'exercices.
+- Exercices à réponse « ensemble » (inéquations) : QCM dont les choix sont des intervalles ; leur vérification
+  passe par `independantTexte` dans `scripts/verifier-exercices.mjs`. Une équation à deux solutions : demander
+  une seule valeur (la plus petite, l'autre racine…), le corrigé donne les deux.
+
+## Spécialité Première / Terminale et ParaMaths
+
+- Chapitres dans `docs/maths/premiere/<chapitre>/` (Terminale : `docs/maths/terminale/`), ordre dans `docs/maths/premiere/index.md`.
+  Priorités d'Arthur : second degré, dérivation, primitives et équations différentielles, puis le reste.
+- ParaMaths (paramaths.fr) est « © Nicolas Masset, tous droits réservés » : **ne jamais recopier** ses énoncés ni ses
+  corrigés. On réécrit les notions, on crée des exercices équivalents, et on met un tableau de liens
+  `https://paramaths.fr/ressources/<niveau>/<chapitre>/exercices#exercice-N` vers les originaux (voir `exercices-second-degre.md`).
 
 ## Décisions techniques (et pourquoi)
 
