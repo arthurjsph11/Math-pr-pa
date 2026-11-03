@@ -10,6 +10,7 @@ import Balance from './Balance.vue'
 import Video from './Video.vue'
 import CarreIdentite from './CarreIdentite.vue'
 import DroiteAffine from './DroiteAffine.vue'
+import Parabole from './Parabole.vue'
 import BoutonImprimer from './BoutonImprimer.vue'
 import BoutonAccueil from './BoutonAccueil.vue'
 import Exercice from './Exercice.vue'
@@ -32,6 +33,7 @@ export default {
     app.component('Video', Video)
     app.component('CarreIdentite', CarreIdentite)
     app.component('DroiteAffine', DroiteAffine)
+    app.component('Parabole', Parabole)
     app.component('BoutonImprimer', BoutonImprimer)
     app.component('Exercice', Exercice)
     app.component('ReponseMath', ReponseMath)

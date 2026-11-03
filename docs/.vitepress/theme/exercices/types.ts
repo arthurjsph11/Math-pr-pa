@@ -27,7 +27,8 @@ export interface ModeleExo {
 export const NIVEAUX = { 1: 'Application', 2: 'Entraînement', 3: 'Approfondissement' } as const
 
 export const THEMES: Record<string, { nom: string; lien: string }> = {
-  fractions: { nom: 'Fractions', lien: '/maths/bloc-0/fractions/exercices-fractions' }
+  fractions: { nom: 'Fractions', lien: '/maths/bloc-0/fractions/exercices-fractions' },
+  'second-degre': { nom: 'Second degré', lien: '/maths/premiere/second-degre/exercices-second-degre' }
 }
 
 // Hasard
